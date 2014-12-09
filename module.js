@@ -4,7 +4,7 @@
 	/**
 	 * @ngdoc module
 	 * @module battlesnake.dsl
-	 * @requires battlesnake.formatters
+	 * @requires battlesnake.transformations
 	 * @requires {@link http://underscorejs.org|Underscore}
 	 *
 	 * @description
@@ -29,6 +29,6 @@
 	 *    to generate a parser for list comprehensions, which is used by the
 	 *    {@link choice|choice directive} to create transformations and bindings.
 	 */
-	angular.module('battlesnake.dsl', ['battlesnake.formatters']);
+	angular.module('battlesnake.dsl', ['battlesnake.transformations']);
 
 })(window.angular);

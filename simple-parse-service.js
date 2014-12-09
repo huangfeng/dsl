@@ -1,7 +1,7 @@
 (function (angular, _) {
 	'use strict';
 
-	angular.module('battlesnake.parsers')
+	angular.module('battlesnake.dsl')
 		.factory('simpleParseService', simpleParseService)
 		.factory('simpleUnparseService', simpleUnparseService)
 		;
