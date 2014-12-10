@@ -43,6 +43,10 @@
 	 *
 	 * See {@link languageBuilderService}
 	 *
+	 * Note that due to the final parser being formulated as a regular expression,
+	 * the comprehension language may only describe Chomsky type-3 grammars.
+	 * Specifically, this forbids recursion.
+	 *
 	 * @example
 	 *
 	 * select {column} from {table} [order by {sort} [[asc|desc]]] [limit {count}]
@@ -92,6 +96,12 @@
 	 * expression from the parse tree and builds a mapping table which maps from
 	 * the regular expression's numbered capture groups to the named capture
 	 * groups as specified by the comprehension syntax.
+	 *
+	 * @todo
+	 * Decouple this from the comprehensionLanguage, so that the regex compiler
+	 * and capture engine can operate on any language specification which
+	 * implements a subset of the features of the comprehension language (using
+	 * the same naming).
 	 */
 	function comprehensionService(simpleParseService, comprehensionLanguage) {
 

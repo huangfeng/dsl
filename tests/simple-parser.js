@@ -4,7 +4,7 @@
  */
 tests.push({
 	name: 'simple-parser',
-	group: 'Parsers',
+	group: 'Domain specific languages',
 	modules: ['battlesnake.dsl'],
 	test: function (simpleParseService, simpleUnparseService) {
 

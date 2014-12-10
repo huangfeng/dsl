@@ -31,6 +31,10 @@
 	 * Parses a simple expresion as defined by the given language.
 	 *
 	 * Useful for creating simple, non-recursive domain specific languages.
+	 *
+	 * Specifically, this service creates a function which parses any Chomsky
+	 * type-3 grammar that satisfies the given language specification, returning
+	 * a parse tree.
 	 */
 	function simpleParser(expr, language) {
 		var i = 0;
