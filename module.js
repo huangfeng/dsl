@@ -3,9 +3,8 @@
 
 	/**
 	 * @ngdoc module
-	 * @module battlesnake.dsl
-	 * @requires battlesnake.transformations
-	 * @requires {@link http://underscorejs.org|Underscore}
+	 * @module dsl
+	 * @requires transformations
 	 *
 	 * @description
 	 * Domain-specific languages (DSLs).  Hints DSL and parser, used by the
